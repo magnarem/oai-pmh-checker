@@ -1,0 +1,207 @@
+# Sites to harvest for various catalogues
+# File to be used for testing, everything is tagged with ADC
+# Original version: Øystein Godøy, METNO/FOU, 2015-05-11 
+# Modified: Øystein Godøy, METNO/FOU, 2019-01-15 
+# Modified: Øystein Godøy, METNO/FOU, 2018-12-08 
+# Modified: Øystein Godøy, METNO/FOU, 2018-08-31 
+# Modified: Øystein Godøy, METNO/FOU, 2018-05-10 
+BAS:  
+  #source: http://oai.nerc-bas.ac.uk:8080/oai/provider 
+  source: https://api.bas.ac.uk/data/metadata/csw/v1 
+  raw: /disk1/data/adc/harvest/bas/raw/
+  mmd: /disk1/data/adc/harvest/bas/mmd/
+  mdkw: iso
+  pref: bas
+  protocol: OGC-CSW
+  set: 
+  collection: GCW
+CC: 
+  source: https://cryoclim.met.no/metamod/oai
+  raw: /disk1/data/adc/harvest/cryoclim/raw
+  mmd: /disk1/data/adc/harvest/cryoclim/mmd
+  mdkw: dif
+  pref: cc
+  protocol: OAI-PMH
+  set: 
+  collection: GCW
+CCIN: 
+  source: http://www.polardata.ca/oai/provider
+  raw: /disk1/data/adc/harvest/ccin/raw/
+  mmd: /disk1/data/adc/harvest/ccin/mmd/
+  mdkw: iso
+  pref: ccin
+  protocol: OAI-PMH
+  set: 
+  collection: GCW
+CHINARE:  
+  source: http://www.chinare.org.cn/oai/provider 
+  raw: /disk1/data/adc/harvest/chinare/raw/
+  mmd: /disk1/data/adc/harvest/chinare/mmd/
+  mdkw: dif
+  pref: 
+  protocol: OAI-PMH
+  set: 
+  collection: 
+CNR-test:
+  #source: http://mainnode.src.cnr.it/pycsw/csw.py?mode=oaipmh
+  source: http://mainnode.src.cnr.it/oaipmh
+  raw: /disk1/data/adc/harvest/cnr/raw/ 
+  mmd: /disk1/data/adc/harvest/cnr/mmd/ 
+  mdkw: dif
+  protocol: OAI-PMH
+  set: 
+  collection: SIOS 
+FMI:
+  # For testing, does not know details and whether GCW are available
+  source: http://catalog.fmi.fi/geonetwork/srv/eng/oaipmh
+  raw: /disk1/data/adc/harvest/fmi/raw/
+  mmd: /disk1/data/adc/harvest/fmi/mmd/
+  mdkw: iso19139
+  pref: fmi
+  protocol: OAI-PMH
+  set: 
+  collection: GCW
+IMR:
+  #source: http://metadata.nmdc.no/OAIPMH-Provider/request/oaipmh
+  source: http://metadata.nmdc.no:80/request/oaipmh 
+  raw: /disk1/data/adc/harvest/imr/raw/
+  mmd: /disk1/data/adc/harvest/imr/mmd/
+  mdkw: dif
+  pref: imr
+  protocol: OAI-PMH
+  set: 
+  collection: GCW
+NERSC:
+  source: http://metadata.nersc.no/oai 
+  raw: /disk1/data/adc/harvest/nersc/raw/
+  mmd: /disk1/data/adc/harvest/nersc/mmd/
+  mdkw: dif
+  pref: nersc
+  protocol: OAI-PMH
+  set: 
+  collection: NSDN
+NILU:
+  #source: http://ebasoai.nilu.no/oai
+  source: http://ebas-oai-pmh.nilu.no/oai/provider
+  raw: /disk1/data/adc/harvest/nilu/raw/
+  mmd: /disk1/data/adc/harvest/nilu/mmd/
+  #mdkw: iso19139
+  mdkw: iso19115
+  pref: nilu
+  protocol: OAI-PMH
+  #set: ebas-test-set
+  set: ebas-db
+  collection: NSDN
+NIPR-ADS:  
+  # Set is not working yet
+  source: https://ads.nipr.ac.jp/portal/oai 
+  raw: /disk1/data/adc/harvest/nipr-ads/raw/
+  mmd: /disk1/data/adc/harvest/nipr-ads/mmd/
+  mdkw: dif
+  pref: nipr-ads
+  protocol: OAI-PMH
+  set: 
+  collection: 
+NIPR-ADS-YOPP:  
+  # Set is not working yet
+  source: https://ads.nipr.ac.jp/portal/oai 
+  raw: /disk1/data/adc/harvest/nipr-ads-yopp/raw/
+  mmd: /disk1/data/adc/harvest/nipr-ads-yopp/mmd/
+  mdkw: dif
+  pref: nipr-ads
+  protocol: OAI-PMH
+  set: YoPP
+  collection: YOPP
+NPI:  
+  source: http://api.npolar.no/dataset/oai 
+  raw: /disk1/data/adc/harvest/npi/raw/
+  mmd: /disk1/data/adc/harvest/npi/mmd/
+  mdkw: dif
+  pref: npi
+  protocol: OAI-PMH
+  set: 
+  collection: NSDN
+NSIDC: 
+  #source: http://nsidc.org/oai/provider 
+  source: http://nsidc.org/api/dataset/metadata/oai
+  raw: /disk1/data/adc/harvest/nsidc/raw/
+  mmd: /disk1/data/adc/harvest/nsidc/mmd/
+  mdkw: dif
+  pref: nsidc
+  protocol: OAI-PMH
+  set: 
+  collection: GCW
+PANGAEA-SIOS1:
+  # This is the CarbonBridge project
+  source: http://ws.pangaea.de/oai/provider
+  raw: /disk1/data/adc/harvest/pangaea-sios1/raw/
+  mmd: /disk1/data/adc/harvest/pangaea-sios1/mmd/
+  mdkw: dif
+  pref: pangaea-sios
+  protocol: OAI-PMH
+  set: project4246
+  collection: SIOS
+PANGAEA-SIOS2:
+  # This is the Hausgarten project
+  source: http://ws.pangaea.de/oai/provider
+  raw: /disk1/data/adc/harvest/pangaea-sios2/raw/
+  mmd: /disk1/data/adc/harvest/pangaea-sios2/mmd/
+  mdkw: dif
+  pref: pangaea-sios
+  protocol: OAI-PMH
+  set: project4055
+  collection: SIOS
+PANGAEA-YOPP:
+  source: http://ws.pangaea.de/oai/provider
+  raw: /disk1/data/adc/harvest/pangaea-yopp/raw/
+  mmd: /disk1/data/adc/harvest/pangaea-yopp/mmd/
+  mdkw: dif
+  pref: pangaea-yopp
+  protocol: OAI-PMH
+  set: project4247
+  collection: YOPP
+PANGAEA-GCW:
+  source: http://ws.pangaea.de/oai/provider
+  raw: /disk1/data/adc/harvest/pangaea-gcw/raw/
+  mmd: /disk1/data/adc/harvest/pangaea-gcw/mmd/
+  mdkw: dif
+  pref: pangaea-yopp
+  protocol: OAI-PMH
+  set: topicCryosphere
+  collection: GCW
+SLF-Davos:
+  source: http://montblanc.slf.ch:8095/oai
+  raw: /disk1/data/adc/harvest/slf-davos/raw/
+  mmd: /disk1/data/adc/harvest/slf-davos/mmd/
+  mdkw: dif
+  pref: slf-davos
+  protocol: OAI-PMH
+  set: 
+  collection: GCW
+WGMS:
+  source: https://geoserver.geo.uzh.ch/wgms/csw/csw.py 
+  raw: /disk1/data/adc/harvest/wgms/raw/
+  mmd: /disk1/data/adc/harvest/wgms/mmd/
+  mdkw: dif
+  pref: 
+  protocol: OGC-CSW
+  set: 
+  collection: GCW
+USK:
+  source: http://ppdb.us.edu.pl/geonetwork/srv/en/oaipmh 
+  raw: /disk1/data/adc/harvest/usk/raw/
+  mmd: /disk1/data/adc/harvest/usk/mmd/
+  mdkw: iso19139
+  pref: 
+  protocol: OAI-PMH
+  set: datasets
+  collection: SIOS
+CAFF:
+  source: http://geo.abds.is/geonetwork/srv/eng/oaipmh
+  raw: /disk1/data/adc/harvest/caff/raw/
+  mmd: /disk1/data/adc/harvest/caff/mmd/
+  mdkw: iso19139
+  pref: 
+  protocol: OAI-PMH
+  set: datasets
+  collection: SAON
