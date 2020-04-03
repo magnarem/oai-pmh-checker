@@ -10,7 +10,7 @@ right way.
 Uses pyoai library to connect to metadata provider in configuration
 and check if we get sane response from the repository
 
-####Usage:
+#### Usage:
 ```
 ./src/checkOAI-PMH.py -c conf/sites2harvest-local.yml
 ```
@@ -20,7 +20,7 @@ This uses standard python requests an urlparse libraries to check
 online status for the provider. Check that we can ping and get
 HTTP 200 OK Response
 
-####Usage:
+#### Usage:
 ```
 ./src/checkOAISimple.py -c conf/sites2harvest-local.yml
 ```
